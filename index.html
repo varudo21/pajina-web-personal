@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Escola UNTL</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+      }
+
+      .header {
+        background-color: #003366;
+        color: white;
+        padding: 30px;
+        text-align: center;
+        position: relative;
+      }
+
+      .logo {
+        width: 120px;
+        height: auto;
+        display: block;
+        margin: 0 auto 10px auto;
+      }
+
+      .navbar {
+        background-color: #00509e;
+        overflow: hidden;
+      }
+
+      .navbar a {
+        float: left;
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      .navbar a:hover {
+        background-color: #003f7f;
+      }
+
+      .content {
+        padding: 20px;
+      }
+
+      .section {
+        display: none;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+      }
+
+      .active {
+        display: block;
+        opacity: 1;
+      }
+
+      .section img {
+        width: 100%;
+        max-width: 600px;
+        margin-top: 10px;
+        border-radius: 10px;
+      }
+
+      .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 10px 0;
+      }
+
+      .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        padding: 10px 0;
+      }
+
+      .card {
+        background-color: #ffffff;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .footer {
+        background-color: #003366;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img
+        src="c:\Users\NAI MAK BUAT HOTU\Downloads\download (4).jpg"
+        alt="Logo UNTL"
+        class="logo"
+      />
+      <h1>UNIVERSIDADE NASIONAL TIMOR-LOROSA'E UNTL</h1>
+      <p>“EDUKASAUN MAK MUDA NASAUN”</p>
+    </div>
+
+    <div class="navbar">
+      <a onclick="showSection('home')">HAU NIA HISTORIA</a>
+      <a onclick="showSection('sobre')">Kona ba</a>
+      <a onclick="showSection('matadalan')">Matadalan</a>
+      <a onclick="showSection('professor')">Professór</a>
+      <a onclick="showSection('kontaktu')">Numero Kontaktu</a>
+    </div>
+
+    <div class="content">
+      <!-- Home -->
+      <div id="home" class="section active">
+        <h2>Bem vimdu mai kadi kapasidade</h2>
+        <p>
+          História da UNTL – Universidade Nacional Timor Lorosa’e Universidade
+          Nacional Timor Lorosa’e (UNTL) nudar universidade públika ida, fó
+          formasaun superior ba povu Timor-Leste. UNTL forma ho objetivu atu
+          desenvolve kapasidade, hetan kualidade akademika no fó kontribuisaun
+          ba dezenvolvimentu nasionál.
+        </p>
+        <p>
+          rijem no Fundasaun UNTL foi formalmente estabelecida iha 27 de
+          Novembro de 2000, tuir Dekretu-Lei n.º 15/2000. Maibé nia raíz hetan
+          husi Universidade da Paz (UNPAZ), ne'ebe halao ona atividade akademika
+          durante okupasaun Indonézia, no iha parte tan husi Universidade Timor
+          Timur (UNTIM). Nia fundasaun hetan apoiu husi ONU (UNTAET), autoridade
+          Timor-Leste, no komunidadi internasionál. 🎓 Objetivu no Visão UNTL
+          nudar instituisaun públika edukasaun superior, iha misión atu: Fornece
+          edukasaun ne’ebé aseitadu ba laran no mundu global. Forma profisionál
+          sira kompetente iha área sira hanesan: agrikultura, educasaun, sainsa
+          sosial, ekonomia, leis, teknolojia, no saúde. Realiza peskiza
+          sientífika no fó kontribuisaun ba dezenvolvimentu Timor-Leste. 🏛️
+          Faculdade sira iha UNTL: UNTL iha várias faculdade ne’ebé fó kursu ho
+          nivel licenciatura no pós-graduação: Faculdade de Educação, Artes e
+          Humanidades Faculdade de Ciências Sociais Faculdade de Direito
+          Faculdade de Agricultura Faculdade de Ciências Exatas Faculdade de
+          Engenharia Faculdade de Medicina e Ciências da Saúde Faculdade de
+          Economia e Gestão 🌍 Parceria no Peskiza UNTL halo kooperasaun ho
+          universidade internasionál, hanesan husi Portugal, Indonézia, Brasil,
+          no Austrália. Nia realiza peskiza sientífika iha área agrikultura,
+          saúde, edukasaun, no cultura timorense. 📍 Lokalizasaun UNTL nia
+          kampus prinsipal iha Kampung Alor, Dili, maibé iha kampus sira seluk
+          iha Hera no Maucau.
+        </p>
+        <img
+          src="c:\Users\NAI MAK BUAT HOTU\Downloads\download (5).jpg"
+          alt="UNTL Campus"
+        />
+      </div>
+
+      <!-- Sobre -->
+      <div id="sobre" class="section">
+        <h2>Sobre Escola</h2>
+        <p>
+          Escola UNTL fundadu husi Universidade Nasional Timor Lorosa’e hodi fó
+          preparasaun akademiku no moral ba estudante sira iha nivel segundáriu.
+        </p>
+        <p>
+          Eskola nee fó prioridade ba ensinu qualidade, disciplina, no
+          integridade ba gerasaun foun.
+        </p>
+        <img
+          src="c:\Users\NAI MAK BUAT HOTU\Downloads\download (5).jpg"
+          alt="Sobre UNTL"
+        />
+      </div>
+
+      <!-- Matadalan -->
+      <div id="matadalan" class="section">
+        <h2>Matadalan Sira</h2>
+        <div class="grid-2">
+          <div class="card">Matemátika</div>
+          <div class="card">Ciência</div>
+          <div class="card">Inglês</div>
+          <div class="card">Informátika</div>
+          <div class="card">História</div>
+          <div class="card">Geografia</div>
+        </div>
+        <img
+          src="c:\Users\NAI MAK BUAT HOTU\Downloads\download (6).jpg"
+          alt="Matadalan UNTL"
+        />
+      </div>
+
+      <!-- Professór -->
+      <div id="professor" class="section">
+        <h2>Lista Professór</h2>
+        <div class="grid-3">
+          <div class="card">Sr. João – Matemátika</div>
+          <div class="card">Sra. Maria – Inglês</div>
+          <div class="card">Sr. José – Informátika</div>
+          <div class="card">Sr. Lucas – Ciência</div>
+          <div class="card">Sra. Ana – História</div>
+          <div class="card">Sra. Teresa – Geografia</div>
+        </div>
+        <img
+          src="c:\Users\NAI MAK BUAT HOTU\Pictures\IMG-20250422-WA0018.jpg"
+          alt="Staff UNTL"
+        />
+      </div>
+
+      <!-- Kontaktu -->
+      <div id="kontaktu" class="section">
+        <h2>Kontaktu</h2>
+        <p>malalevarudo21@gmail.com</p>
+        <p>Email: info@untl.edu.tl</p>
+        <p>Telefone: +670 77334455 / +670 77221100</p>
+        <p>Facebook: facebook.com/untlofisial</p>
+        <img
+          src="c:\Users\NAI MAK BUAT HOTU\Downloads\8c50a883-42a5-4705-ac1e-afdd8b34b279.jpg"
+          alt="Kontaktu"
+        />
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2025 Escola UNTL. Diréitu hotu rezerva.</p>
+    </div>
+
+    <script>
+      function showSection(id) {
+        const sections = document.querySelectorAll(".section");
+        sections.forEach((section) => {
+          section.classList.remove("active");
+        });
+
+        const target = document.getElementById(id);
+        target.classList.add("active");
+      }
+    </script>
+  </body>
+</html>
